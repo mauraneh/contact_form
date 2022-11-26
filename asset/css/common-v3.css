@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg-primary: #f7f6fb;
+  --color-fg-primary: #34495e;
+  --color-fg-secondary: #85929e;
+  --color-fg-third: #aeb6bf;
+  --color-placehorlder: #d6dbdf;
+  --color-link: #f4d03f;
+  --color-link-hover: #f7dc6f;
+  --color-fieldset: #ecf0f3;
+  --color-line: #f4d03f;
+}
+
+/* Le corps du document */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: Roboto;
+}
+
+/* Le titre principal d'un flux */
+h1 {
+  font-size: 2rem;
+  color: var(--color-fg-primary);
+}
+
+/* Le titre de second niveau  */
+h2 {
+  font-size: 1.5rem;
+  color: var(--color-fg-secondary);
+}
+
+/* Le titre de troisème niveau */
+h3 {
+  font-size: 1rem;
+}
+
+/* Les liens */
+a {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+/* Ajout d'un élément de décoration au survol */
+a:hover {
+  text-decoration: none;
+  color: var(--color-link-hover);
+}
+li {
+  list-style: none;
+}
+/* Contenu principal */
+
+footer {
+  background-color: var(--color-bg-primary);
+  font-size: 1rem;
+
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+/* Les articles */
+article {
+  background-color: #fff;
+  padding: 1em;
+}
+
+/* marge entre les sections */
+section + section {
+  margin-top: 2em;
+}
+label {
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: var(--color-fg-secondary);
+}
+legend {
+  font-size: 1rem;
+  color: var(--color-fg-secondary);
+}
+textarea {
+  outline: none;
+  resize: none;
+  width: 20rem;
+  height: 10rem;
+}
+.required {
+  color: red !important;
+}
+
+/* *****************************************************************
+CONTAINER
+***************************************************************** */
+
+/* Le container permet de limiter la largeur d'un contenu */
+.container {
+  max-width: 1100px; /* On donne une largeur au container */
+  margin-left: auto; /* On centre son contenu */
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* KEYFRAMES */
+/* aNIMATION KEYFRAMES */
+@keyframes bouncebb {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}

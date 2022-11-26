@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/785991d3ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="Asset/img/favicon_io/android-chrome-192x192.png" />
+    <link rel="stylesheet" href="asset/css/styleForm.css" />
+    <title>Form - Site Maurane</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img id="logo" src="asset/img/logo.png" alt=""
+        /></a>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li>
+              <a href="contact.html"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class=".gridMain">
+      <!-- Aside -->
+      <aside class="menuAside">
+        <a href=""
+          ><img
+            id="imgusermag"
+            src="asset/img/userMagnifyer.png"
+            alt="search contact"
+        /></a>
+        <a href=""
+          ><img
+            id="imgusers"
+            src="asset/img/contact.png"
+            alt="contact list"
+            title="Aller à la liste des contacts"
+        /></a>
+        <a href="form.html"
+          ><img
+            id="imguseradd"
+            src="asset/img/addcontac.png"
+            alt="add contact"
+            title="Ajouter un contact via le formulaire"
+        /></a>
+      </aside>
+      <!--Un formulaire avec une civilités (mde mr nc)/ Nom Prénom /Email /Tel avec
+    indicatif en select/ date de naissance/ taille/ points d'interet/ remarques/ avatar fichier)/ valider/ annuler-->
+      <article>
+        <fieldset class="formulaire container flexdirection">
+          <legend id="legendForm">Formulaire d'inscription</legend>
+
+          <form
+            action=""
+            method="post"
+            class="gridform"
+            enctype="multipart/form-data"
+          >
+            <section class="partone">
+              <!--Civility-->
+              <div class="civility">
+                <label for="">Civilités<span class="required">*</span>:</label>
+                <span for="">Homme</span>
+                <input type="radio" name="civility" id="men" />
+                <span for="">Femme</span>
+                <input type="radio" name="civility" id="women" />
+                <span for="">N.C</span>
+                <input type="radio" name="civility" id="nc" />
+              </div>
+
+              <!--Nom Prénom-->
+              <div class="name">
+                <label for="">Nom<span class="required">*</span>:</label>
+                <input type="text" name="lastname" id="lastname" />
+              </div>
+              <div class="name">
+                <label for="">Prénom<span class="required">*</span>:</label>
+                <input type="text" name="firstname" id="firstname" />
+              </div>
+
+              <!--Birthday-->
+              <div class="birthday">
+                <label for="birthday">Date de naissance:</label>
+                <input type="date" name="birthday" id="birthday" />
+              </div>
+
+              <!--Height-->
+              <div class="height">
+                <label for="height">Taille:</label>
+                <input type="number" name="" id="height" min="120" max="300" />
+                <span> cm</span>
+              </div>
+
+              <!--Tel-->
+              <div class="tel">
+                <label for="">Tel:</label>
+                <select name="indicatif" id="indicatif">
+                  <option value="telfrance">+33 France</option>
+                  <option value="telspain">+34 Espagne</option>
+                </select>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="6-45-56-56-90"
+                />
+              </div>
+
+              <!--Email-->
+              <div class="email">
+                <label for="">E-mail<span class="required">*</span>:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="pauldupond@email.fr"
+                  required
+                />
+              </div>
+
+              <!-- Files-->
+              <div>
+                <label for="avatar">Ajouter un avatar:</label>
+                <input type="file" name="avatar" id="avatar" />
+              </div>
+            </section>
+
+            <section class="parttwo">
+              <!--Interest points-->
+              <fieldset class="interest grid">
+                <legend>Points d'interêts:</legend>
+                <div class="intst">
+                  <label for="cinema">Cinema</label>
+                  <input type="checkbox" name="cinema" id="cinema" />
+                </div>
+                <div class="intst">
+                  <label for="reading">Lecture</label>
+                  <input type="checkbox" name="reading" id="reading" />
+                </div>
+                <div class="intst">
+                  <label for="musique">Musique</label>
+                  <input type="checkbox" name="musique" id="musique" />
+                </div>
+                <div class="intst">
+                  <label for="sport">Sport</label>
+                  <input type="checkbox" name="sport" id="sport" />
+                </div>
+                <div class="intst">
+                  <label for="fishing">Pêche</label>
+                  <input type="checkbox" name="fishing" id="fishing" />
+                </div>
+                <div class="intst">
+                  <label for="hunt">Chasse</label>
+                  <input type="checkbox" name="hunt" id="hunt" />
+                </div>
+              </fieldset>
+
+              <!--Remark-->
+              <div class="remark">
+                <div>
+                  <label for="remark">Remarque:</label>
+                  <input type="checkbox" name="remark" id="remarkbtn" /><br />
+                </div>
+                <textarea
+                  name="remark"
+                  id="remarktext"
+                  placeholder=" votre remarque ici -"
+                ></textarea>
+              </div>
+
+              <div class="btn">
+                <!--Send-->
+                <div class="btn" id="sendingBtn">
+                  <button>✔️</button>
+                </div>
+
+                <!--Cancel-->
+                <div class="btn" id="sendingBtn">
+                  <button>❌</button>
+                </div>
+              </div>
+            </section>
+          </form>
+        </fieldset>
+      </article>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="asset/js/scriptForm.js"></script>
+</html>

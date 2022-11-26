@@ -1,0 +1,183 @@
+@import "common-v3.css";
+@import "mediaForm.css";
+
+/* HEADER */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-primary);
+  border-bottom: 0.4rem solid var(--color-line);
+}
+.menu ul{
+  display: flex;
+}
+.menu li{
+  margin: 1rem;
+}
+.menu a{
+  font-size: 2rem;
+}
+#logo{
+  padding: 1rem;
+  width: 10rem;
+}
+/* Aside */
+main{
+  margin-top: 6rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 8rem 1fr;
+}
+#imgusermag {
+  width: 4rem;
+}
+#imgusers {
+  width: 4rem;
+}
+#imguseradd {
+  width: 4rem;
+}
+.imgCardUser {
+  width: 5rem;
+}
+.menuAside {
+  background-color: #eaeef3;
+}
+.menuAside a {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.menuAside a:hover {
+    opacity: 20%;
+  }
+/* MAIN */
+.formulaire {
+  width: 100%;
+  text-align: center;
+}
+#legendForm {
+  font-size: 1.4rem;
+  padding: 0.4rem 1.6rem;
+  border-radius: 16px;
+  background: var(--color-fieldset);
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+}
+.partone .parttwo{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.formulaire div {
+  margin: 0.6rem;
+}
+.formulaire span {
+  color: var(--color-fg-third);
+}
+#indicatif {
+  width: 3.8rem;
+  color: var(--color-fg-secondary);
+}
+.form ::placeholder {
+  color: var(--color-placehorlder);
+}
+
+fieldset {
+  width: 100%;
+  margin: auto;
+  border-color: transparent;
+  border-radius: 16px;
+  background: var(--color-fieldset);
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+}
+.grid {
+  display: grid;
+  width: 80%;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+.intst{
+  display: flex;
+  justify-content: space-between;
+}
+textarea {
+  display: none;
+  width: 80%;
+  border-radius: 57px;
+  background: var(--color-bg-primary);
+  margin: auto;
+  border-radius: 16px;
+  background: var(--color-fieldset);
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+  border-color: transparent;
+}
+
+#lastname, #firstname, #birthday, #height, #indicatif, #tel, #email {
+  padding: 0.4rem;
+  border-radius: 6px;
+  background: var(--color-fieldset);
+  box-shadow: 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
+  border-color: transparent;
+}
+#lastname #firstname #email #tel{
+  width: 186px;
+}
+#birthday{
+  width: 120px;
+}
+#height{
+  width: 80px;
+  text-align: right;
+}
+.civility [type=radio]{
+  margin-right: 0.6rem;
+}
+.remark > div{
+  margin-right: 10rem;
+}
+input:focus {
+  outline-color: var(--color-line);
+}
+select:focus {
+  outline-color: var(--color-line);
+}
+input[type=radio] {
+  accent-color: var(--color-line);
+}
+input[type=checkbox] {
+  accent-color: var(--color-line);
+}
+button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+background-color: linear-gradient(225deg, #f0f0f0, #cacaca);
+box-shadow:  -9px 9px 12px #cccccc,
+             9px -9px 12px #f4f4f4;
+  border-color: transparent;
+}
+.btn {
+  display: flex;
+  justify-content: end;
+}
+/* checkbox */
+input[type="checkbox"] {
+  margin: 0;
+}
+/* FOOTER */
+footer {
+  border-top: 0.4rem solid var(--color-line);
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  margin: 1rem;
+}
+

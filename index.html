@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/785991d3ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="Asset/img/favicon_io/android-chrome-192x192.png" />
+    <link rel="stylesheet" href="asset/css/styleHome.css" />
+    <title>Accueil - Site Maurane</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img id="logo" src="asset/img/logo.png" alt=""
+        /></a>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i
+                  class="fa-solid fa-house"
+                  title="aller à la page d'accueil"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i
+                  class="fa-solid fa-user"
+                  title="aller à la liste des contacts"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-magnifying-glass" title=""></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="connectForm">
+        <form action="">
+          <div class="cont">
+            <header class="headForm">
+              <h1>Se connecter</h1>
+              <p>Connecte toi ici avec ton email et ton mot de passe.</p>
+            </header>
+            <div class="fieldForm">
+              <!--   Email -->
+              <span class="inputItem">
+                <i class="fa fa-user-circle"></i>
+              </span>
+              <input
+                class="formInput"
+                id="txtInput"
+                type="email"
+                placeholder="@email"
+                required
+              />
+              <!--   Password -->
+              <span class="inputItem">
+                <i class="fa fa-key"></i>
+              </span>
+              <input
+                class="formInput"
+                type="password"
+                placeholder="Mot de passe"
+                id="pwd"
+                name="password"
+                required
+              />
+              <!-- Show/hide password  -->
+              <span>
+                <i class="fa fa-eye" type="button" id="eye"></i>
+              </span>
+              <!-- button LogIn -->
+              <button class="logIn">Se connecter</button>
+            </div>
+            <!-- other buttons -->
+            <div class="other">
+              <!-- Forgot Password button-->
+              <a href="form.html">
+                <button class="btn submits frgtPass">MDP oublié</button>
+              </a>
+              <!-- Sign Up button -->
+              <a href="form.html">
+                <button class="btn submits signUp">
+                  S'inscrire
+                  <i class="fa fa-user-plus"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="asset/js/scriptHome.js"></script>
+</html>
